@@ -1,38 +1,36 @@
-html {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
   font-family: Helvetica, sans-serif;
-  font-size: 1.1em;
-  letter-spacing: 0.02em;
-  margin-top: 0.5em;
-  margin-left: 2em;
+  margin-left: 1em;
+  user-select: none;
 }
 
-div {
-  margin-bottom: 1em;
+h1 {
+  margin: 0.5em 0;
 }
 
-/* Change svg background color. */
 .area {
-  background-color: rgb(184, 184, 184);
+  margin-top: 1em;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 211, 0, 1) 33%,
+    rgba(255, 147, 64, 1) 100%
+  );
 }
 
 footer {
   position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-footer > p {
-  margin: 1.6rem;
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 0.2rem;
+  bottom: 1em;
+  left: 1em;
 }
 
 a,
 a:visited {
   color: black;
-}
-
-#heart {
-  font-size: 1.6rem;
+  font-weight: 600;
 }

@@ -12,7 +12,7 @@ let moveRate = 10;
 let area = document.getElementById("area");
 
 // Update y-axis position.
-function updateYPosition(distance) {
+function updateYPosition(distance: number) {
   position.y -= distance;
   // Keep square inside the area
   if (position.y < 0) {
@@ -23,7 +23,7 @@ function updateYPosition(distance) {
 }
 
 // Update x-axis position.
-function updateXPosition(distance) {
+function updateXPosition(distance: number) {
   position.x += distance;
   // Keep square inside the area
   if (position.x < 0) {
@@ -38,7 +38,9 @@ function refreshPosition() {
   let y = position.y - areaSize.height / 2;
   let transform = "translate(" + x + " " + y + ")";
 
-  area.setAttribute("transform", transform);
+  if (area !== null) {
+    area.setAttribute("transform", transform);
+  }
 }
 
 window.addEventListener("keydown", function (event) {
