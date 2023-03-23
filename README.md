@@ -1,8 +1,6 @@
 <div align="center">
   <img src="./screenshots/move_square.png" height="500px/>
 
-<h3><a href="https://move-square.netlify.app/">Try me!</a></h3>
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4a662837-b4fa-4f29-b96a-4f4ae4262bd0/deploy-status)](https://app.netlify.com/sites/move-square/deploys)
 
 </div>
